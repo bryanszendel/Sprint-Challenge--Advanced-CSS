@@ -1,1 +1,31 @@
 // Mixins Here
+
+.p-size-spacing() {
+    font-size: 2.1rem;
+    letter-spacing: .1px;
+}
+
+.neg-spacing() {
+    font-size: 3.8rem;
+    letter-spacing: -.2px;
+}
+
+.buttn(@btn-bg-color; @btn-text-color; @radius; @centered; @btn-font-size) {
+    background-color: @btn-bg-color;
+    &:hover {
+        background-color: @btn-text-color;
+    }
+    color: @btn-text-color;
+    &:hover {
+        color: @btn-bg-color;
+    }
+    border-radius: @radius;
+    text-align: @centered;
+    font-size: @btn-font-size;
+    &:hover {
+        border: 1px solid black;
+    }
+    width: 100px;
+    height: 36px;
+    padding: 10px 0;
+}
