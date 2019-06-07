@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive and Full Responsive sites are different in that Adaptive uses hard-code widths (i.e. '16px') whereas Responsive sites will use relative widths and sizes (i.e. '3rem' or '100%').
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile First means that you are designing and building out the mobile version of the site as a priority and then you add in the Desktop version later via media queries. Desktop first is the opposite of that. Desktop is built first and scaled down to accommodate mobile devices. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+font-size: 62.5% in the html tag allows you to scale font sizes throughout the document by a power of 10 allowing you to easily convert sizes as you input styles. For example, 1rem would equal 10px if the font size is set to 62.5%.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I just did this last night for a friend :)
+CSS has a very specific syntax that must be used, wherein specificity is very important. Throughout code, elements can be inside of other elements and that gives them higher specificity. In order to style those elements inside of elements, we have to specify that we want to style the links within the header and not the links within the body of the site, etc. In regular CSS, that requires that we list out the elements within elements and it can get very tedious and difficult to manage your CSS file. Preprocessors like LESS allow us a different syntax where you can easily 'nest' elements within one another, similarly to the HTML structure of a webpage. We don't have to write out all of the classes over and over again. We can simply nest them inside one another. In addition, there are additional functions and variables that we can use with LESS and LESS will compile all of that code we write into regular old CSS code. So we can have simpler and more organized LESS files that ultimately generate into regular CSS for the computer browser to read and style websites with. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love variables! I've gone through the pain of trying to find all of the specific colors to change within a webpage and variables are a game changer for that. Also, it just makes sense to be able to slightly change things in seconds by changing the variable in one place. 
+
+I really like parametric mixins, but I struggle a little bit with how they should be implemented. To me, it seems that they become useful *after* you've written a bunch of code and realize they need to be setup. I'm sure that I'll become more familiar with them and how they are used as I get used to them. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,12 +63,12 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add your project manager as collaborator on Github.
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
